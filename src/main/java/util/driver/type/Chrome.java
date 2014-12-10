@@ -1,4 +1,4 @@
-package tv.adap.util.driver.type;
+package util.driver.type;
 
 /**
  * Author: anilc

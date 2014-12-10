@@ -1,4 +1,4 @@
-package tv.adap.util.app;
+package util.app;
 
 /**
  * Author: anilc

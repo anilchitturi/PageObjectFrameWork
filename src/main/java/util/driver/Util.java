@@ -1,4 +1,4 @@
-package tv.adap.util.driver;
+package util.driver;
 
 /**
  * Author: anilc
@@ -16,7 +16,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import tv.adap.util.app.Properties;
+import util.app.Properties;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;

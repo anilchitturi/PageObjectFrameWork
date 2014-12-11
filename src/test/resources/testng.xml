@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--Parallel attribute make the tests to run in parallel, let say if we have 2 test calls as below and for each test
+ attribute it will open a new window and all the tests under those attributes will execute at the same time, in the below case both login and accounts tsest
+  will run on 2 different browsers same time.if you don't want to run in parallel, remove that attribute so that tests will execute in the same
+  IBrowser one after the other-->
+
+<!--<suite name="UI" verbose="1" parallel="classes">-->
+<suite name="UI" verbose="1">
+        <test name="CoreTests" preserve-order="false">
+        <!--We cam specify the parameter as below for browsers-->
+        <!--<parameter name="browser"  value="firefox"/>-->
+        <!--<parameter name="environment" value="local"/>-->
+        <!--<groups>-->
+            <!--<run>-->
+                <!--<include name="Regression"/>-->
+            <!--</run>-->
+        <!--</groups>-->
+        <!--mvn clean test -Dbrowser=chrome -Denvironment=qa -Dgroups=Regression -Dparallel=classes-->
+        <classes>
+            <class name="tests.RegistartionTest" />  
+        </classes>
+        <!--we can run tests by specifying tests, classes and packages as well-->
+        <!--<packages>-->
+        <!--<package name=" " />-->
+        <!--</packages>-->
+    </test>
+</suite>
